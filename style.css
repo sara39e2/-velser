@@ -1,5 +1,14 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*************** img *********************/
 img {
   width: 100%;
+  display: block;
+  padding: 70px;
 }
 
 .soldout {
@@ -14,6 +23,31 @@ img {
 
 .menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  text-decoration: none;
+}
+.menu a {
+  text-decoration: none;
+}
+
+/************* BODY ***********/
+
+body {
+  line-height: 1.563;
+}
+
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: steelblue;
+}
+
+h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: black;
+}
+
+a {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: black;
 }

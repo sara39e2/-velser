@@ -2,10 +2,18 @@ img {
   width: 100%;
 }
 
-.sold_out {
+.soldout {
   padding: 0px;
 }
 
-.on_sale {
+.onsale {
   padding: 0px;
+}
+
+/*********** HEADER **********/
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

@@ -40,6 +40,8 @@ body {
 h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: steelblue;
+  padding: 20px;
+  font-size: 40px;
 }
 
 h2 {
@@ -50,4 +52,42 @@ h2 {
 a {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: black;
+}
+
+/*********** kategori ***********/
+.kategoriliste {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+.kategoriliste a {
+  text-decoration: none;
+  padding: 2em;
+  background-color: grey;
+}
+
+/************* produktliste **********/
+.productlist article {
+  margin-bottom: 1rem;
+}
+.productlist article {
+  display: flex;
+  flex-direction: column;
+}
+.productlist main h2 {
+  grid-column: 1/-1;
+}
+.productlist {
+  padding: 0;
+  margin: calc((100vh / 25) * 1.563) calc((100vw / 25) * 1.563);
+  font-weight: 400;
+  line-height: 1.563;
+  color: var(--color);
+  background-color: var(--background-color);
+  caret-color: var(--caret-color);
+}
+.productlist main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
 }

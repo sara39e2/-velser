@@ -93,3 +93,9 @@ a {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 8rem;
 }
+
+/*********** produkt **********/
+.bigProduct {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

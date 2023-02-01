@@ -26,6 +26,7 @@ img {
   justify-content: space-around;
   align-items: center;
   text-decoration: none;
+  padding-top: 40px;
 }
 .menu a {
   text-decoration: none;
@@ -39,21 +40,32 @@ body {
 }
 
 h1 {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Raleway", sans-serif;
   color: black;
   padding: 20px;
   font-size: 40px;
 }
 
 h2 {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Raleway", sans-serif;
   color: black;
   padding-top: 30px;
 }
+h3 {
+  font-family: "Raleway", sans-serif;
+}
 
 a {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Raleway", sans-serif;
   color: black;
+}
+p {
+  font-family: "Raleway", sans-serif;
+}
+
+.forside {
+  background: url(imgs/Artboard\ 1-2.webp);
+  background-size: cover;
 }
 
 /*********** kategori ***********/
@@ -110,11 +122,12 @@ a {
 }
 
 .productlist article.soldOut::before {
-  content: "Udsolgt";
+  content: "Sold Out";
   position: absolute;
   background: black;
   color: white;
   padding: 1rem;
+  font-family: "Raleway", sans-serif;
 }
 /*********** produkt **********/
 .bigProduct {

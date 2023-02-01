@@ -93,9 +93,20 @@ a {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 8rem;
 }
+.discounted p:last-child {
+  background: red;
+  padding: 0.2rem;
+}
 
 /*********** produkt **********/
 .bigProduct {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+.bigProductPicture {
+  padding: 110px;
+}
+.bigProductText {
+  text-align: center;
+  padding-top: 300px;
 }

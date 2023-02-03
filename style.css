@@ -26,7 +26,7 @@ img {
   justify-content: space-around;
   align-items: center;
   text-decoration: none;
-  padding-top: 40px;
+  padding-top: 11px;
 }
 .menu a {
   text-decoration: none;
@@ -42,7 +42,7 @@ body {
 h1 {
   font-family: "Raleway", sans-serif;
   color: black;
-  padding: 20px;
+
   font-size: 40px;
 }
 
@@ -63,8 +63,13 @@ p {
   font-family: "Raleway", sans-serif;
 }
 
-.forside {
-  background: url(imgs/Artboard\ 1-2.webp);
+.andresider {
+  background: url(imgs/to.webp);
+  background-size: cover;
+}
+
+.langside {
+  background: url(imgs/langbillede.webp);
   background-size: cover;
 }
 
@@ -106,11 +111,13 @@ p {
 .productlist main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 8rem;
+  gap: 6rem;
 }
 .discounted p:last-child {
   padding: 0.2rem;
   text-align: end;
+  font-size: larger;
+  font-weight: 800;
 }
 
 .productlist article.onSale .discounted {
@@ -118,7 +125,7 @@ p {
   justify-content: space-between;
 }
 .productlist article.soldOut img {
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .productlist article.soldOut::before {
@@ -135,9 +142,14 @@ p {
   grid-template-columns: 1fr 1fr;
 }
 .bigProductPicture {
-  padding: 110px;
+  width: 60%;
+  display: block;
+  padding: 0px;
+  padding-left: 70px;
+  margin-left: 214px;
 }
+
 .bigProductText {
-  text-align: center;
-  padding-top: 300px;
+  padding-top: 130px;
+  margin-left: 30px;
 }

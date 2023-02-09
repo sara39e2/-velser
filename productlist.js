@@ -3,7 +3,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 const kat = urlParams.get("kat");
 
-const url = `https://kea-alt-del.dk/t7/api/products?limit=20&kategori=${kat}`;
+const url = `https://kea-alt-del.dk/t7/api/products?limit=20&category=${kat}`;
 
 const skabelon = document.querySelector("template").content;
 const container = document.querySelector("main");
@@ -36,16 +36,17 @@ function showProduct(product) {
   copy.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
   copy.querySelector("a").href = "produkt.html?id=" + product.id;
 
-  copy.querySelector(".discounted p").textContent = Math.round(product.price - (product.price * product.discount) / 100);
-
   copy.querySelector(".price").textContent = product.price;
 
   if (product.soldout) {
     copy.querySelector("article").classList.add("soldOut");
   }
 
-  if (product.onsale) {
+  if (product.discount) {
+    console.log(product);
     copy.querySelector("article").classList.add("onSale");
+    copy.querySelector(".discounted p").textContent = Math.round(product.price - (product.price * product.discount) / 100);
+    copy.querySelector(".discounted p+p").textContent = product.discount + "%";
   }
 
   //7 appende

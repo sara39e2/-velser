@@ -120,6 +120,10 @@ p {
   font-weight: 800;
 }
 
+.gem {
+  display: none;
+}
+
 .productlist article.onSale .discounted {
   display: flex;
   justify-content: space-between;
